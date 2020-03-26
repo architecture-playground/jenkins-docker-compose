@@ -12,6 +12,9 @@ Connect to your account. Visit the dashboard to <https://dashboard.ngrok.com/aut
 
 `$ ./ngrok authtoken <YOUR_AUTH_TOKEN>`
 
+**Start Jenkins with Docker Compose**
+=================
+
 To run jenkins-docker-compose write the following command:
 
 `docker-compose up -d --build`

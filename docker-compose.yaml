@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+  jenkins:
+    image: 'jenkinsci/blueocean:latest'
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    volumes:
+      - type: bind
+        source: ./jenkins-data
+        target: /var/jenkins_home
+      - type: bind
+        source: ./jenkins-docker-certs
+        target: /certs/client
+    environment:
+      - 'JENKINS_OPTS=--httpPort=8080 --httpsPort=50000'
+      - 'DOCKER_TLS_VERIFY=1'
+      - 'DOCKER_HOST=tcp://docker:2376'
+      - 'DOCKER_CERT_PATH=/certs/client'
+
+volumes:
+  jenkins-data:
+    driver: local
+  jenkins-docker-certs:
+    driver: local
+

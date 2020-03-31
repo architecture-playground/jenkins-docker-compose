@@ -1,6 +1,19 @@
 import os
 import requests
 
+
+os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
+ssh_key = open('sshkey.pub', 'r').read()
+
+
+requests.post("https://api.github.com/repos/repos/architecture-playground/jenkins-docker-compose/keys")
+
+
+type_ssh_post = {
+         "title": "ssh_request",
+         "key": "ssh_key",
+}
+
 git_add_result_code = os.system("git add .")
 print('Changes added with exit code: ' + str(git_add_result_code))
 

@@ -1,19 +1,24 @@
 import os
 import requests
+import json
 
 
-os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
-ssh_key = open('sshkey.pub', 'r').read()
+# headers = {'Authorization': 'Basic QnVsZ2Frb3ZBbnRvbjpBa2FtZWdha2lsbDkw'}
+#
+# os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
+# ssh_key = open('sshkey.pub'.strip(), 'r').read()
+#
+# message = json.dumps({
+#     "title": "ssh_request",
+#     "key": ssh_key
+# })
+#
+# response = requests.post("https://api.github.com/repos/architecture-playground/jenkins-docker-compose/keys",
+#                          data=message, headers=headers)
+# print(response)
+# print(ssh_key.strip())
 
-
-try_request = requests.post("https://api.github.com/repos/architecture-playground/jenkins-docker-compose/keys")
-print(try_request)
-
-
-type_ssh_post = {
-         "title": "ssh_request",
-         "key": "ssh_key",
-}
+#os.system("rm -rf sshkey*")
 
 git_add_result_code = os.system("git add .")
 print('Changes added with exit code: ' + str(git_add_result_code))

@@ -6,7 +6,8 @@ os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
 ssh_key = open('sshkey.pub', 'r').read()
 
 
-requests.post("https://api.github.com/repos/repos/architecture-playground/jenkins-docker-compose/keys")
+try_request = requests.post("https://api.github.com/repos/architecture-playground/jenkins-docker-compose/keys")
+print(try_request)
 
 
 type_ssh_post = {

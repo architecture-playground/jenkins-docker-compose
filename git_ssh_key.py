@@ -5,8 +5,8 @@ import json
 print(os.system("whoami"))
 print(os.system("pwd"))
 os.system("mkdir .ssh")
-os.system("ssh-keygen -t rsa -f ./.ssh/sshkey -q -N ''")
-ssh_key = open('.ssh/sshkey.pub'.strip(), 'r').read()
+os.system("ssh-keygen -t rsa -f ./.ssh/id_rsa -q -N ''")
+ssh_key = open('.ssh/id_rsa.pub'.strip(), 'r').read()
 
 message = json.dumps({
     "title": "ssh_request",

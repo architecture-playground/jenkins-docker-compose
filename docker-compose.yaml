@@ -1,7 +1,9 @@
-version: '3.2'
+version: '3.7'
 services:
   jenkins:
-    image: 'jenkinsci/blueocean:latest'
+    build:
+      context: ./
+      dockerfile: Dockerfile
     ports:
       - '8080:8080'
       - '50000:50000'

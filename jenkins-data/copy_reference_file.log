@@ -95,3 +95,20 @@ INSTALLED plugins/blueocean-rest-impl.jpi : 1.22.0
 --- Copying files at Thu Mar 26 10:22:27 UTC 2020
 --- Copying files at Thu Mar 26 10:36:32 UTC 2020
 --- Copying files at Thu Mar 26 10:41:03 UTC 2020
+--- Copying files at Tue Mar 31 20:50:24 UTC 2020
+UPGRADED plugins/antisamy-markup-formatter.jpi : Image version (2.0) is newer than installed version (1.8)
+UPGRADED plugins/credentials.jpi : Image version (2.3.5) is newer than installed version (2.3.4)
+UPGRADED plugins/jira.jpi : Image version (3.0.14) is newer than installed version (3.0.13)
+UPGRADED plugins/workflow-job.jpi : Image version (2.38) is newer than installed version (2.37)
+--- Copying files at Thu Apr  2 13:46:17 UTC 2020
+--- Copying files at Thu Apr  2 14:45:56 UTC 2020
+--- Copying files at Fri Apr  3 09:07:09 UTC 2020
+UPGRADED plugins/sse-gateway.jpi : Image version (1.23) is newer than installed version (1.22)
+--- Copying files at Fri Apr  3 09:18:15 UTC 2020
+--- Copying files at Fri Apr  3 09:19:27 UTC 2020
+--- Copying files at Fri Apr  3 09:24:18 UTC 2020
+--- Copying files at Fri Apr  3 09:26:54 UTC 2020
+--- Copying files at Mon Apr  6 11:57:21 UTC 2020
+--- Copying files at Mon Apr  6 22:45:55 UTC 2020
+UPGRADED plugins/github-api.jpi : Image version (1.109) is newer than installed version (1.106)
+UPGRADED plugins/mercurial.jpi : Image version (2.9) is newer than installed version (2.8)

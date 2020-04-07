@@ -2,29 +2,33 @@ import os
 import requests
 import json
 
+print(os.system("whoami"))
+print(os.system("pwd"))
 
-# headers = {'Authorization': 'Basic QnVsZ2Frb3ZBbnRvbjpBa2FtZWdha2lsbDkw'}
-#
-# os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
-# ssh_key = open('sshkey.pub'.strip(), 'r').read()
-#
-# message = json.dumps({
-#     "title": "ssh_request",
-#     "key": ssh_key
-# })
-#
-# response = requests.post("https://api.github.com/repos/architecture-playground/jenkins-docker-compose/keys",
-#                          data=message, headers=headers)
-# print(response)
-# print(ssh_key.strip())
+os.system("ssh-keygen -t rsa -f ./sshkey -q -N ''")
+ssh_key = open('sshkey.pub'.strip(), 'r').read()
 
-#os.system("rm -rf sshkey*")
+message = json.dumps({
+    "title": "ssh_request",
+    "key": ssh_key
+})
 
-git_add_result_code = os.system("git add .")
-print('Changes added with exit code: ' + str(git_add_result_code))
+headers = {'Authorization': 'Basic QnVsZ2Frb3ZBbnRvbjpBa2FtZWdha2lsbDkw'}
+response = requests.post("https://api.github.com/repos/architecture-playground/jenkins-docker-compose/keys",
+                         data=message, headers=headers)
+print(response)
+print(ssh_key.strip())
 
-git_commit_result_code = os.system("git commit -m 'Save changes by cron job'")
-print('Changes committed with exit code: ' + str(git_commit_result_code))
+git_init = os.system("cd /var/jenkins_home && git init")
+print("git init result: " + str(git_init))
 
-git_push_result_code = os.system("git push origin master")
-print('Changes pushed with exit code: ' + str(git_push_result_code))
+git_config_email = os.system("git config --global user.email \"bylgakov.anton.a@gmailcom\"")
+print("add user email " + str(git_config_email))
+
+git_config_user = os.system("git config --global user.name \"BulgakovAnton\"")
+print("add uer name " + str(git_config_user))
+
+git_remote_add_origin = os.system(
+    "cd /var/jenkins_home && git remote add origin git@github.com:architecture-playground/jenkins-docker-compose.git"
+)
+print('added remote with exit code: ' + str(git_remote_add_origin))

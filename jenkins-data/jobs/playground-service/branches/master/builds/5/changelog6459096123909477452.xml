@@ -1,0 +1,10 @@
+commit 1a3a65d678c847c2db6798615b7dc8341119ca52
+tree 5e98de6a5c9a77793e17a8fa1d965dc155d50d59
+parent 07e2747cc4d7bdbb4156faba218597c087c99f1d
+author BulgakovAnton <bylgakov.anton.a@gmailcom> 2020-04-17 01:00:30 +0300
+committer BulgakovAnton <bylgakov.anton.a@gmailcom> 2020-04-17 01:00:30 +0300
+
+    SPIKE beautify logs
+
+
+:100644 100644 e1fac9e17aab34b224ac7110a3952275507dd1be 7c870f0d1329584d2b3f1250dd885368ed336aac M	Jenkinsfile

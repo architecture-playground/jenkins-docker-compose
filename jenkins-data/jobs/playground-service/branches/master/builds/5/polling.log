@@ -1,0 +1,11 @@
+Started on Apr 16, 2020 10:01:00 PM
+Using strategy: SpecificRevisionBuildChooser
+[poll] Last Built Revision: Revision 07e2747cc4d7bdbb4156faba218597c087c99f1d (master)
+using credential github
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git ls-remote -h -- https://github.com/architecture-playground/playground-service.git # timeout=10
+Found 1 remote heads on https://github.com/architecture-playground/playground-service.git
+[poll] Latest remote head revision on refs/heads/master is: 1a3a65d678c847c2db6798615b7dc8341119ca52
+Done. Took 0.48 sec
+Changes found

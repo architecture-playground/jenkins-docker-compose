@@ -1,0 +1,10 @@
+commit 9816ef44c84ffc4f3a69a67412aa8ea4b305651e
+tree c2c4e544ac7f679b3f341179eb056c70e7114fa4
+parent 2c78bcab69ffccd39076fc74e5acdd46fe2329a2
+author BulgakovAnton <bylgakov.anton.a@gmailcom> 2020-04-17 01:05:53 +0300
+committer BulgakovAnton <bylgakov.anton.a@gmailcom> 2020-04-17 01:05:53 +0300
+
+    SPIKE trying to fix build
+
+
+:100644 100644 f7b2a2bfd095a63f67ed685c2aabc548002139f9 f21db61e7782bd1755708392e37a2e713bdceefe M	Jenkinsfile

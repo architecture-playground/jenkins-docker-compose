@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>10</string>
+    </parentIds>
+    <id>11</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=master</string>
+            <string>GIT_COMMIT=07e2747cc4d7bdbb4156faba218597c087c99f1d</string>
+            <string>GIT_LOCAL_BRANCH=master</string>
+            <string>GIT_PREVIOUS_COMMIT=de0b0ec4858a87ba0f47d45eb730ed9dc064dbe8</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=de0b0ec4858a87ba0f47d45eb730ed9dc064dbe8</string>
+            <string>GIT_URL=https://github.com/architecture-playground/playground-service.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1587074301484</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

@@ -1,16 +1,26 @@
-Started by user [8mha:////4J24N3O7FzWt5LuUD5XvFXMzno2PkQlKBOrG2MLLgrmJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xLyS/DwAbNh42cAAAAA=[0mBulgakov Anton
-[Fri Mar 20 13:30:26 GMT 2020] Starting branch indexing...
-ERROR: [Fri Mar 20 13:30:31 GMT 2020] Could not update folder level actions from source blueocean
-hudson.AbortException: Invalid scan credentials anton/****** (GitHub Access Token) to connect to https://api.github.com, skipping
-	at org.jenkinsci.plugins.github_branch_source.Connector.checkConnectionValidity(Connector.java:545)
-	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieveActions(GitHubSCMSource.java:1878)
-	at jenkins.scm.api.SCMSource.fetchActions(SCMSource.java:848)
-	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:598)
-	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:277)
-	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:164)
-	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1032)
-	at hudson.model.ResourceController.execute(ResourceController.java:97)
-	at hudson.model.Executor.run(Executor.java:427)
-[Fri Mar 20 13:30:31 GMT 2020] Finished branch indexing. Indexing took 5 sec
-FATAL: Invalid scan credentials anton/****** (GitHub Access Token) to connect to https://api.github.com, skipping
-Finished: FAILURE
+Started
+[Thu Apr 16 15:38:59 GMT 2020] Starting branch indexing...
+[8mha:////4JSYMpPhwAN4AVY6elVuT8EuIwR+GbkuMaYrPmLHes/NAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRh85K1cwBSGxQmjgAAAA==[0mConnecting to https://api.github.com using anton/****** (GitHub Access Token)
+Examining [8mha:////4DB+L271VkFFPTPn/qW64TOV0XlBwbH0VnCAFCfGdI93AAAAsx+LCAAAAAAAAP9djLENwjAQRY8gGIASMQFS4o4ClIoGpIiGCYxj2QZjW+dzlKzBGtAwBOOwA0EpkPjNf817jzdMIsJCpzp6Vwjvorey2HVBojXucvAkV+X9Wd7CK4NsD1MrnSJdwTihJZhVZ95wZrlT7EhonNq0CPO/3Hb4bwyGjTKANvSwJCg1UYhrxpQhnU69dWUchTYkBSWUebC8U+iTq9kP8yixMUJ+AKy3vXbCAAAA[0marchitecture-playground/playground-service
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4Brg/OcGtILLubrKw8AQm7zvtaHED2qCBLYyjAqDgr6lAAAAuB+LCAAAAAAAAP9djLENwjAQRY8gMgAlYoXgjgKUioZIiIYJTHKyDY5tnc8RWYM1oGEIxmEHQCmQ+M1/zXv3F0wiwVynJnq3qL2L3uJi2wcka9x57xmX5e1RXsMzg6yC3KJTrHcwTmQZpruT7KSw0ilxYDJOrS8Es7/cZvhvDIaNMoBL+EDOUGnmEFdCKMM6HT9WKyTV2jDWnAiLYGWvyCfXiB8WEakzNQomRNHKyEhv5Y9KJs4AAAA=[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: master
+
+  1 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining architecture-playground/playground-service
+
+[Thu Apr 16 15:39:03 GMT 2020] Finished branch indexing. Indexing took 3.9 sec
+Finished: SUCCESS

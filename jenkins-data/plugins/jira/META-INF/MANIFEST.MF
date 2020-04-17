@@ -2,17 +2,17 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: olamy
-Build-Jdk: 1.8.0_222
+Build-Jdk: 1.8.0_201
 Extension-Name: jira
 Specification-Title: Integrates Jenkins to Jira
 Implementation-Title: jira
-Implementation-Version: 3.0.14
+Implementation-Version: 3.0.15
 Group-Id: org.jenkins-ci.plugins
 Short-Name: jira
 Long-Name: Jenkins Jira plugin
 Url: https://github.com/jenkinsci/jira-plugin
 Minimum-Java-Version: 1.8
-Plugin-Version: 3.0.14
+Plugin-Version: 3.0.15
 Hudson-Version: 2.176.4
 Jenkins-Version: 2.176.4
 Plugin-Dependencies: workflow-job:2.0,workflow-step-api:2.0;resolution

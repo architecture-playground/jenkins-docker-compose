@@ -6,7 +6,7 @@
   <usages>
     <entry>
       <string>playground-service/master</string>
-      <ranges>2</ranges>
+      <ranges>2,7</ranges>
     </entry>
   </usages>
   <facets/>

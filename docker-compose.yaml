@@ -14,6 +14,9 @@ services:
       - type: bind
         source: ./jenkins-docker-certs
         target: /certs/client
+      # to avoid "Docker-in-Docker issue we use docker from "host" machine
+      # read more https://www.testcontainers.org/supported_docker_environment/continuous_integration/dind_patterns/
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - 'JENKINS_OPTS=--httpPort=8080 --httpsPort=50000'
       - 'DOCKER_TLS_VERIFY=1'

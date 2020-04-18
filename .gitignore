@@ -3,3 +3,6 @@
 /jenkins-data/workspace/
 /jenkins-data/jobs/playground-service/branches/master/scm-polling.log
 /jenkins-data/logs/
+/jenkins-data/.java/
+/jenkins-data/jobs/playground-service/branches/master/builds/
+/jenkins-data/org.jenkinsci.plugins.github_branch_source.GitHubSCMProbe.cache/

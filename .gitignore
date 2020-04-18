@@ -1,4 +1,5 @@
 # idea
 .idea/
-/jenkins-data/workspace/playground-service_master/
-/jenkins-data/workspace/playground-service_master@tmp/
+/jenkins-data/workspace/
+/jenkins-data/jobs/playground-service/branches/master/scm-polling.log
+/jenkins-data/logs/

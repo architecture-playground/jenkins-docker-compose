@@ -6,3 +6,5 @@
 /jenkins-data/.java/
 /jenkins-data/jobs/playground-service/branches/master/builds/
 /jenkins-data/org.jenkinsci.plugins.github_branch_source.GitHubSCMProbe.cache/
+/jenkins-data/war/
+**/.timestamp2

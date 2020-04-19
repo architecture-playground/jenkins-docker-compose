@@ -11,12 +11,12 @@ X-OAuth-Scopes: admin:enterprise, admin:gpg_key, admin:org, admin:public_key, ad
 X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
 Content-Encoding: gzip
-Date: Fri, 17 Apr 2020 14:17:12 GMT
+Date: Sun, 19 Apr 2020 15:49:08 GMT
 Server: GitHub.com
 Status: 304 Not Modified
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4992
-X-RateLimit-Reset: 1587136510
+X-RateLimit-Remaining: 4986
+X-RateLimit-Reset: 1587313538
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
 ETag: "12ff7b02260d0960aa6858b8b2a1ecb0"
@@ -30,9 +30,9 @@ X-XSS-Protection: 1; mode=block
 Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
 Vary: Accept-Encoding, Accept, X-Requested-With
-X-GitHub-Request-Id: D328:18635:1C62CBB:216D65B:5E99BA67
-OkHttp-Sent-Millis: 1587133032167
-OkHttp-Received-Millis: 1587133032362
+X-GitHub-Request-Id: DD6A:509F:17D6E0A:1BA7704:5E9C72F4
+OkHttp-Sent-Millis: 1587311348530
+OkHttp-Received-Millis: 1587311348782
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

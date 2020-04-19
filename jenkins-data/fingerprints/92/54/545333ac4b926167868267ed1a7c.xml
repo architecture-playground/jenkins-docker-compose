@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-16 16:41:01.185 UTC</timestamp>
+  <md5sum>9254545333ac4b926167868267ed1a7c</md5sum>
+  <fileName>Credential id=github name=anton/****** (GitHub Access Token)</fileName>
+  <usages>
+    <entry>
+      <string>playground-service/master</string>
+      <ranges>2,7-18</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

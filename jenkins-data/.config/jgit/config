@@ -1,17 +1,5 @@
-[filesystem "e4ddda761947|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
-	timestampResolution = 1001 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "d9f5267a537f|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
-	timestampResolution = 1006 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "c49381c420d6|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
-	timestampResolution = 1001 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "4547a1eff37f|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
-	timestampResolution = 1001 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "29002ab1b068|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
-	timestampResolution = 1001 milliseconds
+[filesystem "1ba6f87499b0|IcedTea|1.8.0_212|osxfs"]
+	timestampResolution = 1002 milliseconds
 	minRacyThreshold = 0 nanoseconds
 [filesystem "f269afe1c1b1|IcedTea|1.8.0_212|/dev/nvme0n1p5"]
 	timestampResolution = 1001 milliseconds

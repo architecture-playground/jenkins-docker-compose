@@ -1,6 +1,6 @@
-Started
-[Thu Apr 16 15:38:59 GMT 2020] Starting branch indexing...
-[8mha:////4JSYMpPhwAN4AVY6elVuT8EuIwR+GbkuMaYrPmLHes/NAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRh85K1cwBSGxQmjgAAAA==[0mConnecting to https://api.github.com using anton/****** (GitHub Access Token)
+Started by user [8mha:////4J24N3O7FzWt5LuUD5XvFXMzno2PkQlKBOrG2MLLgrmJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xLyS/DwAbNh42cAAAAA=[0mBulgakov Anton
+[Tue Apr 21 10:59:02 GMT 2020] Starting branch indexing...
+[8mha:////4IpKSx6gO5hpKUBj4cVOqmF7MKiqPUKL/ERPztW/jXckAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHThnBS9zQAKPL4EjgAAAA==[0mConnecting to https://api.github.com using anton/****** (GitHub Access Token)
 Examining [8mha:////4DB+L271VkFFPTPn/qW64TOV0XlBwbH0VnCAFCfGdI93AAAAsx+LCAAAAAAAAP9djLENwjAQRY8gGIASMQFS4o4ClIoGpIiGCYxj2QZjW+dzlKzBGtAwBOOwA0EpkPjNf817jzdMIsJCpzp6Vwjvorey2HVBojXucvAkV+X9Wd7CK4NsD1MrnSJdwTihJZhVZ95wZrlT7EhonNq0CPO/3Hb4bwyGjTKANvSwJCg1UYhrxpQhnU69dWUchTYkBSWUebC8U+iTq9kP8yixMUJ+AKy3vXbCAAAA[0marchitecture-playground/playground-service
 
   Checking branches...
@@ -10,6 +10,7 @@ Examining [8mha:////4DB+L271VkFFPTPn/qW64TOV0XlBwbH0VnCAFCfGdI93AAAAsx+LCAAAAAA
     Checking branch [8mha:////4Brg/OcGtILLubrKw8AQm7zvtaHED2qCBLYyjAqDgr6lAAAAuB+LCAAAAAAAAP9djLENwjAQRY8gMgAlYoXgjgKUioZIiIYJTHKyDY5tnc8RWYM1oGEIxmEHQCmQ+M1/zXv3F0wiwVynJnq3qL2L3uJi2wcka9x57xmX5e1RXsMzg6yC3KJTrHcwTmQZpruT7KSw0ilxYDJOrS8Es7/cZvhvDIaNMoBL+EDOUGnmEFdCKMM6HT9WKyTV2jDWnAiLYGWvyCfXiB8WEakzNQomRNHKyEhv5Y9KJs4AAAA=[0mmaster
       ‘Jenkinsfile’ found
     Met criteria
+Changes detected: master (05b19ee99fc73397c423be5de252335568d05fad → 23ec21706bb8a45ed1f1f4dc9744eb55f367e289)
 Scheduled build for branch: master
 
   1 branches were processed
@@ -22,5 +23,5 @@ Scheduled build for branch: master
 
 Finished examining architecture-playground/playground-service
 
-[Thu Apr 16 15:39:03 GMT 2020] Finished branch indexing. Indexing took 3.9 sec
+[Tue Apr 21 10:59:08 GMT 2020] Finished branch indexing. Indexing took 5.2 sec
 Finished: SUCCESS

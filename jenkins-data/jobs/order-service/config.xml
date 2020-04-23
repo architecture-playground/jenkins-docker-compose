@@ -1,1 +1,51 @@
-<?xml version='1.1' encoding='UTF-8'?><flow-definition plugin="workflow-job@2.38">  <actions>    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@2.21">      <jobPropertyDescriptors>        <string>org.jenkinsci.plugins.workflow.job.properties.DisableConcurrentBuildsJobProperty</string>      </jobPropertyDescriptors>    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.6.0"/>    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.6.0">      <jobProperties>        <string>jenkins.model.BuildDiscarderProperty</string>      </jobProperties>      <triggers>        <string>hudson.triggers.SCMTrigger</string>      </triggers>      <parameters/>      <options/>    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>  </actions>  <description></description>  <keepDependencies>false</keepDependencies>  <properties>    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.15"/>    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>      <triggers>        <hudson.triggers.SCMTrigger>          <spec>* * * * *</spec>          <ignorePostCommitHooks>false</ignorePostCommitHooks>        </hudson.triggers.SCMTrigger>      </triggers>    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>    <jenkins.model.BuildDiscarderProperty>      <strategy class="hudson.tasks.LogRotator">        <daysToKeep>-1</daysToKeep>        <numToKeep>10</numToKeep>        <artifactDaysToKeep>-1</artifactDaysToKeep>        <artifactNumToKeep>10</artifactNumToKeep>      </strategy>    </jenkins.model.BuildDiscarderProperty>    <org.jenkinsci.plugins.workflow.job.properties.DisableConcurrentBuildsJobProperty/>  </properties>  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.80">    <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">      <configVersion>2</configVersion>      <userRemoteConfigs>        <hudson.plugins.git.UserRemoteConfig>          <url>git@github.com:architecture-playground/order-service.git</url>          <credentialsId>jenkins-github-ssh-key</credentialsId>        </hudson.plugins.git.UserRemoteConfig>      </userRemoteConfigs>      <branches>        <hudson.plugins.git.BranchSpec>          <name>*/master</name>        </hudson.plugins.git.BranchSpec>      </branches>      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>      <submoduleCfg class="list"/>      <extensions/>    </scm>    <scriptPath>Jenkinsfile</scriptPath>    <lightweight>true</lightweight>  </definition>  <triggers/>  <disabled>false</disabled></flow-definition>
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.21">
+  <actions/>
+  <description></description>
+  <properties>
+    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.23">
+      <dockerLabel></dockerLabel>
+      <registry plugin="docker-commons@1.16"/>
+    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
+  </properties>
+  <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.5.6">
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </folderViews>
+  <healthMetrics>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@6.12">
+      <nonRecursive>false</nonRecursive>
+    </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+  </healthMetrics>
+  <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.5.6">
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </icon>
+  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.12">
+    <pruneDeadBranches>true</pruneDeadBranches>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>-1</numToKeep>
+  </orphanedItemStrategy>
+  <triggers/>
+  <disabled>false</disabled>
+  <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.5.6">
+    <data>
+      <jenkins.branch.BranchSource>
+        <source class="jenkins.plugins.git.GitSCMSource" plugin="git@4.2.2">
+          <id>48c36f80-a9d8-4666-a421-9081bb820b76</id>
+          <remote>git@github.com:architecture-playground/order-service.git</remote>
+          <credentialsId>jenkins-github-ssh-key</credentialsId>
+          <traits>
+            <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+          </traits>
+        </source>
+        <strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+          <properties class="empty-list"/>
+        </strategy>
+      </jenkins.branch.BranchSource>
+    </data>
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </sources>
+  <factory class="org.jenkinsci.plugins.workflow.multibranch.WorkflowBranchProjectFactory">
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+    <scriptPath>Jenkinsfile</scriptPath>
+  </factory>
+</org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject>

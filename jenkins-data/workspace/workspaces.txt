@@ -1,2 +1,14 @@
+feature-toggle-service/master
+feature-toggle-service_master
+order-service/master
+order-service_master
+payment-service/SPIKE-test-multibranch-CI
+ervice_SPIKE-test-multibranch-CI
+payment-service/master
+payment-service_master
 playground-service/master
 playground-service_master
+spring-boot-admin/master
+spring-boot-admin_master
+user-service/master
+user-service_master

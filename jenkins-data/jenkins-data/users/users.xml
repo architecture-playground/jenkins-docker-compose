@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>bylgakov.anton.a</string>
+      <string>bylgakovantona_442768265838695381</string>
+    </entry>
+    <entry>
+      <string>mikhail</string>
+      <string>Mikhail_4889751535710685913</string>
+    </entry>
+    <entry>
+      <string>noreply</string>
+      <string>noreply_5801804886004926468</string>
+    </entry>
+    <entry>
+      <string>51023119+bulgakovanton</string>
+      <string>51023119Bulgak_7355490873503242696</string>
+    </entry>
+    <entry>
+      <string>anton</string>
+      <string>Anton_2962543179485105040</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

@@ -15,3 +15,5 @@
 /jenkins-data/queue.xml
 /jenkins-data/.owner
 /jenkins-data/caches/
+/jenkins-data/jenkins-data/war/
+/jenkins-data/jenkins-data/org.jenkinsci.plugins.github_branch_source.GitHubSCMProbe.cache/T4uL-EvmpvDxtzYPNdLAmObwNUoifBJmcwstq5lwTLQ/

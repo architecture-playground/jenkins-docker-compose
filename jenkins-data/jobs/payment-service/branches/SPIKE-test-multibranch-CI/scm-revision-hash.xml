@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@4.2.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>SPIKE-test-multibranch-CI</name>
+  </head>
+  <hash>de82d4dde1c9b0aaedcce1d0576605a56bc27849</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

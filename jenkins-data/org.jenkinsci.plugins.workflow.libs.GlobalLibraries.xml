@@ -1,4 +1,22 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.libs.GlobalLibraries plugin="workflow-cps-global-lib@2.16">
-  <libraries class="empty-list"/>
+  <libraries>
+    <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+      <name>jenkins-libraries</name>
+      <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
+        <scm class="jenkins.plugins.git.GitSCMSource" plugin="git@4.2.2">
+          <id>2ad2ac21-c4e3-4a5b-bdbf-b880f0f3e231</id>
+          <remote>git@github.com:architecture-playground/jenkins-libraries.git</remote>
+          <credentialsId>jenkins-github-ssh-key</credentialsId>
+          <traits>
+            <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
+          </traits>
+        </scm>
+      </retriever>
+      <defaultVersion>master</defaultVersion>
+      <implicit>false</implicit>
+      <allowVersionOverride>true</allowVersionOverride>
+      <includeInChangesets>true</includeInChangesets>
+    </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+  </libraries>
 </org.jenkinsci.plugins.workflow.libs.GlobalLibraries>
